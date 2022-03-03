@@ -23,14 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ya3m1vf@n7aa*s!o1d2m306(z_lr38wr$4&!%(s=p*#$1pfpxi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['.herokuapp.com','localhost','simple-pages-project.herokuapp.com']
-=======
-ALLOWED_HOSTS = ['.herokuapp.com','localhost','simple-pages-project.herokuapp.com/']
->>>>>>> 3a3119c97bd90ad1d117b2f8203036d1cedc518a
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -46,7 +41,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
