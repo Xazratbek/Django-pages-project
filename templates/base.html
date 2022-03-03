@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEB SITE</title>
+</head>
+<body style="background-color:black;color:white">
+	<header>
+		<a href="{% url 'home' %}"><h2 style="text-align: center;">Homepage</h2></a>
+		<a href="{% url 'about' %}"><h2 style="text-align: center;">About Page</h2></a>
+		<a href="{% url 'programming' %}"><h2 style="text-align: center;">Programming Page</h2></a>
+	</header>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
